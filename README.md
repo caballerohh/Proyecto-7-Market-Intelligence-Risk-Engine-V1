@@ -1,62 +1,54 @@
-# Markets-Intelligence-Risk-Monitoring-Report
-Este repositorio contiene un ecosistema avanzado de **Inteligencia de Mercados** que automatiza la extracción de datos, el análisis de regímenes macroeconómicos y la generación de reportes ejecutivos en formato  proyecto integra métricas de volatilidad implícita, modelos de estrés y análisis de la curva de tasas para transformar datos crudos en *insights* estratégicos.
-🎯 **Objetivo:** Desarrollar una herramienta integral de monitoreo de riesgos y oportunidades tácticas que centralice la visión macro y el impacto de escenarios de estrés en capital institucional[..
+# Market Intelligence & Risk Monitor — V1
+
+A Python workflow that combines cross-asset market data, risk diagnostics and automated PDF reporting into a concise market-monitoring framework.
+
+## Purpose
+
+The project was developed to translate market data into a structured view of risk conditions, diversification and tactical context. It connects macro-sensitive indicators, volatility measures, yield-curve information and portfolio stress scenarios within one reporting workflow.
+
+The portfolio, observation window and written commentary remain configurable while the reporting series is being standardized.
+
+## Analytical Scope
+
+- Cross-asset market and risk monitoring
+- Implied-volatility and volatility-regime diagnostics
+- Yield-curve tracking
+- Rolling correlation and diversification analysis
+- Drawdown measurement
+- Scenario-based portfolio stress testing
+- Automated chart and PDF generation
+
+## Report Workflow
+
+1. Retrieve market and rate data.
+2. Calculate returns, changes and risk indicators.
+3. Build volatility, curve, correlation and drawdown diagnostics.
+4. Apply configurable portfolio stress scenarios.
+5. Render charts, tables and analytical commentary in PDF format.
+
+## Repository Contents
+
+| File | Description |
+|---|---|
+| [market_intelligence_v1.py](./market_intelligence_v1.py) | End-to-end data, analytics, visualization and reporting workflow |
+| [Market_Monitoring_Executive_Report_V1.pdf](./Market_Monitoring_Executive_Report_V1.pdf) | Example output produced by the V1 workflow |
+
+## Methods and Tools
+
+- Market-risk indicators and implied-volatility ranges
+- Relative-strength and regime diagnostics
+- Yield-curve and cross-asset correlation analysis
+- Drawdown and scenario stress testing
+- Python: Pandas, NumPy, Matplotlib, Seaborn, yfinance and ReportLab
+
+## Model and Data Limitations
+
+The monitor is a decision-support tool rather than a forecasting system. Signals are sensitive to selected inputs, observation windows and market-data availability. Scenario results are hypothetical and should not be read as expected returns or guaranteed loss estimates.
+
+## Development Context
+
+V1 documents the initial reporting architecture. The expanded monitoring framework is available in [Market Intelligence Monitor V2](https://github.com/caballerohh/Proyecto-8-Market-Intelligence-Monitor-V2-Macro-Risk-Engine), while consolidated macro-market work is organized in [Macro Outlook & Markets Analysis](https://github.com/caballerohh/Macro-Outlook-and-Markets-Analysis).
 
 ---
 
-## 📖 Extended Overview
-El sistema está diseñado para profesionales que requieren una visión técnica del mercado global. Mediante el uso de bibliotecas de manipulación de datos y maquetación de documentos (ReportLab), el motor genera reportes de 6 páginas que cubren desde el sentimiento del mercado (VIX) hasta proyecciones probabilísticas de precios mediante **Implied Cones**.
-
-
-
-### 🎯 Key Objectives of the Analysis
-* **Macro Regime Analysis:** Monitoreo de la divergencia entre el S&P 500 y el VIX para identificar entornos de "complacencia" o fragilidad en el sentimiento.
-* **Predictive Alpha Forecasting:** Uso de la volatilidad implícita para proyectar rangos de movimiento esperados ($1\sigma$ y $2\sigma$) a 21 días.
-* **Rates Structure & Recession Watch:** Seguimiento del spread 10Y-3M y el ratio **TIP/IEF** para evaluar expectativas de inflación y señales de recesión.
-* **Diversification Health:** Análisis de correlaciones móviles (60D) para validar la efectividad de las coberturas tradicionales frente al riesgo sistémico.
-* **Portfolio Stress Testing:** Cuantificación del impacto en el P&L ante choques de inflación, caídas de equity o aumentos paralelos en las tasas.
-
----
-
-## 🔍 Assets & Indicators Analyzed
-El motor procesa un universo cruzado de activos para una visión holística:
-
-* **🚀 Equities & Sentiment:** S&P 500 (SPY) y el índice de volatilidad VIX.
-* **🛡️ Fixed Income & Hedge:** US Treasuries (3M a 30Y), TLT (Bonos largos), IEF (Medio plazo) y TIP (Protección contra inflación).
-* **📊 Macro Proxies:** Dólar Americano (DXY) para medir las condiciones financieras globales.
-
----
-
-## 📈 Key Intelligence Results
-* **Regime Detection:** Identificación de una fase de "expansión de múltiplos" con un VIX en niveles históricamente bajos, sugiriendo complacencia ante riesgos de cola
-* **Tactical Warning:** Con un **RSI en 68**, el mercado se sitúa en la frontera técnica de sobrecompra, indicando una relación riesgo-recompensa desfavorable
-* **Correlation Breakdown:** La correlación SPY/TLT rompió al alza (+0.45), eliminando el beneficio de la diversificación convencional
-* **Scenario Impact:** Un choque de inflación se identifica como el escenario más devastador, con una pérdida estimada de -$700,000 en el portafolio modelo
-
----
-
-## 🛠️ Code Structure & Logic
-
-### 1. Data Engine 🔍
-* Ingesta automatizada mediante `yfinance` y `pandas_datareader` con limpieza de datos y sincronización de frecuencias
-
-### 2. Predictive Core 🧬
-* Cálculo de **Conos de Volatilidad** basados en la volatilidad diaria derivada del VIX para establecer niveles de "Take Profit" parcial
-
-### 3. Reporting Layer (ReportLab) 📑
-* Maquetación profesional en PDF con estilos corporativos, tablas dinámicas y renderizado automático de gráficos
-
----
-
-## 🚀 Technologies & Concepts Used
-* **Quantitative Finance:** Volatilidad Implícita, Z-Score de Volatilidad, RSI, y Spread de Tasas.
-* **Risk Management:** Stress Testing (Twists de curva), Análisis de Drawdowns, y Matrices de Correlación
-* **Python Stack:** ReportLab (Generación de PDF), Pandas (Series temporales), Seaborn & Matplotlib (Visualización técnica).
-
----
-
-## ⚙️ Installation & Requirements
-
-### 1. Requisitos previos
-```bash
-pip install yfinance pandas numpy matplotlib seaborn reportlab
+This project is provided for research, education and professional portfolio purposes. It does not constitute investment advice.
